@@ -7,7 +7,6 @@
 body{
     position: relative;
     background-color: #f9f9f9;
-    font-family: "Trebuchet MS", Verdana, "Malgun Gothic","Microsoft YaHei", sans-serif;
 }
 ::selection{
     background-color: #1abc9c;
@@ -19,6 +18,9 @@ a{
 a:hover{
     color: #1abc9c;
     text-decoration: none;
+}
+.vc-pt15{
+    padding-top: 15px;
 }
 .vc-header{
     background-color: #fff;
@@ -52,6 +54,11 @@ a:hover{
 .vc-pagelist-img img{
     width: 100%;
 }
+.vc-widget-title{
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 15px 15px 0;
+}
 /* Blog Content CSS */
 .vc-blog{
     width: 100%;
@@ -83,7 +90,7 @@ a:hover{
 .vc-blog-content .vc-blog-words{
     font-size: 14px;
 }
-.vc-blog-content .vc-blog-words>p{
+.vc-blog-content>.vc-blog-words>p{
     text-indent: 2rem;
 }
 /* FOOTER CSS */

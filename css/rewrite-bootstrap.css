@@ -43,7 +43,8 @@
 .thumbnail{
     padding: 5px 15px;
     overflow: hidden;
-    border: 1px solid #efefef;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(229,229,229,0.3);
 }
 .panel{
     box-shadow: none;
