@@ -7,25 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <title>Vic Chen - 前端开发爱好者。</title>
-    <meta name="keywords" content="bootstrap主题,Wordpress主题,drupal主题,vicchen的博客">
-    <meta name="description" content="这是一个基于bootstrap框架的主题，是一款私有主题，个人偏好简洁，萌发开发理念，如果您不小心使用了该主题，请注明版权，禁止商业行为。">
+    <meta name="keywords" content="bootstrap主题,Wordpress主题,vicchen的博客">
+    <meta name="description" content="这是一个基于bootstrap框架的Wordpress主题，是一款私有主题，个人偏好简洁，萌发开发理念，如果您不小心使用了该主题，请注明版权，禁止商业行为。">
     <link rel="Bookmark" href="favicon.ico">
     <link rel="Shortcut Icon" href="favicon.ico" />
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/rewrite-bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9]> 
-<script type="text/javascript" src="js/html5.js"></script>
-<script type="text/javascript" src="js/respond.min.js"></script>
-<![endif]-->
+    <script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-    <header class="vHeader">
-        <nav class="navbar navbar-default navbar-fixed-top">
+    <header class="vc-header">
+        <nav class="navbar navbar-default" data-spy="affix" data-offset-top="80">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rmenu">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vmenu">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -37,7 +38,7 @@
                     </a>
                 </div>
 
-                <div class="collapse navbar-collapse" id="rmenu">
+                <div class="collapse navbar-collapse" id="vmenu">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">首页 <span class="sr-only">(current)</span></a>
                         </li>
@@ -69,20 +70,20 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container vc-container">
         <div class="row">
             <div class="col-sm-12 col-md-8">
                 <!-- CODE START -->
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <article class="vBlog">
-                            <h1 class="vBlog-title">胡同里的小太子</h1>
-                            <p class="vAuthor"><i class="fa fa-user"></i> Vic Chen &nbsp;&nbsp;<i class="fa fa-calendar"></i> 2015-04-28</p>
-                            <div class="vBlog-content">
-                                <div class="vBlog-img">
+                        <article class="vc-blog">
+                            <h1 class="vc-blog-title">胡同里的小太子</h1>
+                            <p class="vc-author"><i class="fa fa-user"></i> Vic Chen &nbsp;&nbsp;<i class="fa fa-calendar"></i> 2015-04-28</p>
+                            <div class="vc-blog-content">
+                                <div class="vc-blog-img">
                                     <img src="img/demo01.jpg" alt="">
                                 </div>
-                                <div class="vBlog-words">
+                                <div class="vc-blog-words">
                                     <p>
                                         它是胡同里的常客，偶尔静静的在那里等待主人，偶尔惊扰周末睡懒觉的邻居，其实都没什么大不了，大家已经习惯了它的存在，它的主人也一直很爱惜它，后座不常做人，也总是被擦的亮亮的，好像随时等待着女主人来此.
                                     </p>
@@ -112,7 +113,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <form role="search">
-                            <div class="form-group">
+                            <div class="form-group" style="margin-bottom:0;">
                                 <input type="text" class="form-control" placeholder="善于搜索...">
                             </div>
                         </form>
@@ -142,34 +143,35 @@
                     <div class="panel-body">
                         <h4>友情链接</h4>
                         <div class="row">
-                            <a href="http://www.itlipeng.cn" class="col-md-4 vA">IT蜗牛</a>
-                            <a href="#!" class="col-md-4 vA">VicTheme</a>
-                            <a href="#!" class="col-md-4 vA">岁寒的博客</a>
-                            <a href="#!" class="col-md-4 vA">前端鹏红</a>
-                            <a href="#!" class="col-md-4 vA">石头记</a>
-                            <a href="#!" class="col-md-4 vA">艳军博客</a>
-                            <a href="#!" class="col-md-4 vA">申请友链</a>
+                            <a href="http://www.itlipeng.cn" class="col-md-4">IT蜗牛</a>
+                            <a href="#!" class="col-md-4">VicTheme</a>
+                            <a href="#!" class="col-md-4">岁寒的博客</a>
+                            <a href="#!" class="col-md-4">前端鹏红</a>
+                            <a href="#!" class="col-md-4">石头记</a>
+                            <a href="#!" class="col-md-4">艳军博客</a>
+                            <a href="#!" class="col-md-4">申请友链</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="vFooter">
-        <div class="vFtop">
-            <ul class="vFmenu">
-                <li><a class="vA" href="#!">订阅RSS</a>
+    <footer class="vc-footer">
+        <div class="vc-footer-info">
+            <ul class="vc-footer-menu">
+                <li><a href="#!"><i class="fa fa-weixin"></i></a>
                 </li>
-                <li><a class="vA" href="#!"><i class="fa fa-weixin"></i></a>
+                <li><a href="#!"><i class="fa fa-weibo"></i></a>
                 </li>
-                <li><a class="vA" href="#!"><i class="fa fa-weibo"></i></a>
+                <li><a href="#!"><i class="fa fa-rss"></i></a>
+                </li>
+                <li><a href="#!"><i class="fa fa-github"></i></a>
                 </li>
             </ul>
         </div>
-        <div class="vFbottom">
-            <div> vicchen.me Copyright © 2015 <a class="vA" href="#!">Vic Theme</a>
-            </div>
-            Powered by <a class="vA" href="#!">Vic Chen</a>
+        <div class="vc-footer-copyright">
+            <div> vicchen.me Copyright © 2015 <a href="#!">Vic Theme</a></div>
+            Powered by <a href="#!">Vic Chen</a>
         </div>
     </footer>
     <script type="text/javascript" src="js/jquery.min.js"></script>

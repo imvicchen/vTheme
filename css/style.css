@@ -1,189 +1,119 @@
 /*
-
-*/
+ * AUTHOR: Vic Chen
+ * URL: http://www.vicchen.me
+ */
 
 /* vPaper THEME START */
 body{
-background-color: #f9f9f9;
-padding-top: 103px;
-font-family: "Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","宋体B8B\4F53";
+    position: relative;
+    background-color: #f9f9f9;
+    font-family: "Trebuchet MS", Verdana, "Malgun Gothic","Microsoft YaHei", sans-serif;
 }
 ::selection{
     background-color: #1abc9c;
     color: #FFF;
 }
-.vHeader h1{
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-}
-.vA{
+a{
     color: #797979;
 }
-.vA:hover{
+a:hover{
     color: #1abc9c;
     text-decoration: none;
 }
-.vPagetitle{
+.vc-header{
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #efefef;
+}
+.vc-header h1{
+    margin: 0;
+    padding: 0;
+    height: 0;
+    text-indent: -999px;
+}
+.vc-container{
+    padding-top: 30px;
+}
+.vc-page-title{
     color: #555;
 }
-.vPagetitle:hover{
+.vc-page-title:hover{
     color: #555;
     text-decoration: none;
 }
-.vAuthor{
+.vc-author{
     font-size: 12px;
     line-height: 18px;
     color: #b5b5b5;
 }
-.vPagelistimg{
+.vc-pagelist-img{
     margin: -5px -15px 0;
 }
-.vPagelistimg img{
+.vc-pagelist-img img{
     width: 100%;
 }
 /* Blog Content CSS */
-.vBlog{
+.vc-blog{
     width: 100%;
     height: auto;
     padding: 0 20px;
 }
-.vBlog-title{
+.vc-blog-title{
     font-size: 36px;
     line-height: 42px;
     font-weight: normal;
     text-transform: none;
 }
-.vBlog-content{
+.vc-blog-content{
     width: 100%;
     height: auto;
     margin: 15px auto 10px;
     overflow: hidden;
 }
-.vBlog-content img{
+.vc-blog-content img{
     width: 100%;
 }
-.vBlog-content .vBlog-img{
+.vc-blog-content .vc-blog-img{
     width: 100%;
     height: auto;
     text-align: center;
     overflow: hidden;
     margin: 10px auto 20px;
 }
-.vBlog-content .vBlog-words{
+.vc-blog-content .vc-blog-words{
     font-size: 14px;
 }
-.vBlog-content .vBlog-words>p{
+.vc-blog-content .vc-blog-words>p{
     text-indent: 2rem;
 }
 /* FOOTER CSS */
-.vFooter{
+.vc-footer{
     background: #242424;
     padding-bottom: 30px;
 }
-.vFooter .vFtop{
+.vc-footer .vc-footer-info{
     background: #2d2e2f;
 }
-.vFooter .vFtop .vFmenu{
+.vc-footer .vc-footer-info .vc-footer-menu{
     padding: 12px 20px;
     text-align: center;
     list-style: none;
     overflow: hidden;
 }
-.vFooter .vFtop .vFmenu > li{
+.vc-footer .vc-footer-info .vc-footer-menu > li{
     vertical-align: top;
 }
-.vFooter .vFtop .vFmenu > li:nth-child(n+2){
-    margin-left: 10px;
+.vc-footer .vc-footer-info .vc-footer-menu > li:nth-child(n+2){
+    margin-left: 15px;
 }
-.vFooter .vFtop .vFmenu > li,
-.vFooter .vFtop .vFmenu > li > a{
+.vc-footer .vc-footer-info .vc-footer-menu > li,
+.vc-footer .vc-footer-info .vc-footer-menu > li > a{
     display: inline-block;
+    font-size: 14px;
 }
-.vFooter .vFbottom {
+.vc-footer .vc-footer-copyright {
     padding-top: 30px;
     text-align: center;
     font-weight: 700;
 }
 /* vPaper THEME END */
-/* 重定义Bootstrap START */
-@media (min-width: 768px){
-    .navbar {
-      border-radius: 0;
-    }
-    .navbar-nav>li>a {
-      padding-top: 0; 
-      padding-bottom: 0; 
-      line-height: 80px;
-    }
-    .nav>li>a {
-      padding: 0px 25px;
-    }
-}
-.navbar{
-    box-shadow: none;
-    border-bottom: 1px solid #EFEFEF
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
-    background-color: #F9F9F9;
-}
-.navbar-brand{
-    height: 80px;
-}
-.navbar-toggle{
-    margin-top:22.5px;
-    margin-bottom: 22.5px;
-}
-.thumbnail{
-    padding: 5px 15px;
-    overflow: hidden;
-    border: 1px solid #EFEFEF;
-}
-.panel{
-    box-shadow: none;
-}
-.panel-default{
-    border:1px solid #EFEFEF;
-}
-.pagination>li>a, .pagination>li>span{
-    color:#1abc9c;
-    border: 1px solid #EFEFEF;
-}
-.pagination > li > a:hover,
-.pagination > li > span:hover,
-.pagination > li > a:focus,
-.pagination > li > span:focus {
-    color: #FFF;
-    background-color: #1abc9c;
-}
-.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
-    background-color: #1abc9c;
-    border-color: #EFEFEF;
-}
-.pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus{
-    border-color: #EFEFEF;
-}
-.btn {
-    border: 1px;
-    box-shadow: none;
-}
-.btn-blue{
-    color: #999;
-    background-color: #fff;
-    border:1px solid #EFEFEF;
-}
-.btn-blue:hover,
-.btn-blue:focus,
-.btn-blue.focus,
-.btn-blue:active,
-.btn-blue.active,
-.open > .dropdown-toggle.btn-blue {
-  color: #FFF;
-  background-color: #1abc9c;
-  border-color: #EFEFEF;
-}
-.list-group-item{
-  padding: 10px;
-  border: 1px solid #EFEFEF;
-}
-/* 重定义Bootstrap END */
