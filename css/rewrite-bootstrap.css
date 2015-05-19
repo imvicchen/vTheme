@@ -20,13 +20,13 @@
     z-index: 2;
 }
 .navbar{
-    box-shadow: none;
-    min-height: 40px;
     margin: 0;
+    min-height: 40px;
+    box-shadow: none;
 }
 .navbar-default .navbar-nav>li>a {
     color: #999;
-    font-weight: 600;
+    font-weight: normal;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
     background-color: #f2f2f2;
@@ -107,5 +107,15 @@ input[type=number]:focus,
 .list-group-item{
   padding: 10px;
   border: 1px solid #efefef;
+}
+.label-default{
+  background-color: #efefef;
+  color: #a6a6a6;
+}
+.well{
+    background-color: #1abc9c;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 3px;
 }
 /* 重定义Bootstrap END */

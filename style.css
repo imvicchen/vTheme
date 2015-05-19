@@ -1,0 +1,215 @@
+/*
+Theme Name: Vic Theme
+Theme URI: http://vicchen.me/
+Author: Vic Chen
+Author URI: http://vicchen.me/
+Description: 一款基于bootstrap的主题。
+Version: 1.0
+*/
+/* vPaper THEME START */
+
+html {
+    margin: 0!important;
+}
+
+body {
+    position: relative;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif
+}
+
+::selection {
+    background-color: #1abc9c;
+    color: #FFF;
+}
+
+a {
+    color: #797979;
+}
+
+a:hover {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.vc-pt15 {
+    padding-top: 15px;
+}
+
+.vc-header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #efefef;
+}
+
+.vc-header h1 {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    text-indent: -999px;
+}
+
+.vc-container {
+    padding-top: 30px;
+}
+
+.vc-page-title {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.vc-page-title a{
+    color: #555;
+}
+
+.vc-page-title a:hover{
+    color: #1abc9c;
+}
+
+.vc-author-info {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.vc-author-info a {
+    color: #aaa;
+}
+
+.vc-author-info a:hover {
+    color: #1abc9c;
+}
+
+.vc-author-info>time,
+.vc-author-info>span {
+    margin: 0 .3em 0;
+}
+
+.vc-author-info>:first-child {
+    margin-left: 0;
+}
+
+.vc-pagelist-img {
+    margin: -5px -15px 0;
+}
+
+.vc-pagelist-img img {
+    width: 100%;
+}
+
+.vc-widget-title {
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 15px 15px 0;
+}
+/* Blog Content CSS */
+
+.vc-blog {
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+
+.vc-blog-title {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.vc-blog-content {
+    width: 100%;
+    height: auto;
+    margin: 15px auto 10px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.vc-blog-content img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    margin: 10px auto 10px;
+}
+
+.panel.panel-default .vc-copyright {
+    background: #f9f9f9;
+    padding: .5em .7em;
+    margin: 1em 0;
+    border: 1px solid #1abc9c;
+    border-left-width: 4px;
+}
+
+.vc-tags{
+    font-size: 12px;
+}
+
+.vc-tags a:before{
+    content: "#";
+}
+
+.vc-tags a{
+    margin-right: .5em;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background: #ccc;
+    color: #fff;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    transition: background .3s;
+}
+
+.vc-tags a:hover{
+    background-color: #aaa;
+}
+
+.vc-more-link{
+    color: #1abc9c;
+    font-weight: bold;
+}
+/* FOOTER CSS */
+
+.vc-footer {
+    background: #242424;
+    padding-bottom: 30px;
+}
+
+.vc-footer .vc-footer-info {
+    background: #2d2e2f;
+}
+
+.vc-footer .vc-footer-info .vc-footer-menu {
+    padding: 12px 20px;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+.vc-footer .vc-footer-info .vc-footer-menu > li {
+    vertical-align: top;
+}
+
+.vc-footer .vc-footer-info .vc-footer-menu > li:nth-child(n+2) {
+    margin-left: 15px;
+}
+
+.vc-footer .vc-footer-info .vc-footer-menu > li,
+.vc-footer .vc-footer-info .vc-footer-menu > li > a {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.vc-footer .vc-footer-copyright {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.vc-fixed{
+    position: fixed;	
+	bottom: 0;
+	left: 0;
+}
+/* vPaper THEME END */
